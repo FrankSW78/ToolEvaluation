@@ -1,0 +1,149 @@
+steps:
+  STG_SV_DM_FDM_D_SHS_S_FDM00_R_TCURR-a50da5be-5123-40ae-855f-afd5aed27847:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: WORK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 3f2c6fc5-9891-4f35-940e-f09c78eaad31
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MANDT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 49d762d6-2866-4e95-aa89-1571aa314c46
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+          - columnReference:
+              columnCounter: 0143e0c4-9b5e-4653-95dc-07b23b7e40a7
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: KURST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 399ff4c3-4af4-45b8-82f7-ee4177cfee52
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+          - columnReference:
+              columnCounter: f6d267f0-f7dd-427f-a4e9-2f5281b3f777
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FCURR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 89adbbad-9c27-4e20-b0fa-52c781332747
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+          - columnReference:
+              columnCounter: c199f4e5-fe9c-470b-b95f-e798a5387c46
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TCURR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 065d3fb4-1a17-4454-b16c-733b2bb2008e
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+          - columnReference:
+              columnCounter: 5c317749-b0b0-4709-89f8-4d67a7d28d17
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GDATU
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e32a1097-c704-421f-b640-3a611b64d5d9
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+          - columnReference:
+              columnCounter: ce792828-2a1f-4040-ab0e-bf90ccc9398e
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: UKURS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 48d8b5b8-0dea-4f02-ae37-082c1b5b918f
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+          - columnReference:
+              columnCounter: da1341a7-390a-4e9b-a682-7f224784b488
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FFACT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 434ca7e4-6898-4624-986d-3aa49348cc8a
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+          - columnReference:
+              columnCounter: 196bb7b2-b618-46af-93bd-901a89e32fc2
+              stepCounter: a50da5be-5123-40ae-855f-afd5aed27847
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TFACT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 89c20943-6599-4738-b422-2544985caff5
+                    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SAMPLE
+                nodeName: SV_DM_FDM_D_SHS_S_FDM00_R_TCURR
+            join:
+              joinCondition: FROM {{ ref('SAMPLE', 'SV_DM_FDM_D_SHS_S_FDM00_R_TCURR') }} "SV_DM_FDM_D_SHS_S_FDM00_R_TCURR"
+            name: STG_SV_DM_FDM_D_SHS_S_FDM00_R_TCURR
+            noLinkRefs: []
+      name: STG_SV_DM_FDM_D_SHS_S_FDM00_R_TCURR
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: a50da5be-5123-40ae-855f-afd5aed27847

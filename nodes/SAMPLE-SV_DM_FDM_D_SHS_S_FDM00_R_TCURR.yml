@@ -1,0 +1,139 @@
+steps:
+  SV_DM_FDM_D_SHS_S_FDM00_R_TCURR-8b75afc9-2223-42cc-81f7-38a07dbe630f:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SAMPLE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 49d762d6-2866-4e95-aa89-1571aa314c46
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: MANDT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 399ff4c3-4af4-45b8-82f7-ee4177cfee52
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: KURST
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 89adbbad-9c27-4e20-b0fa-52c781332747
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FCURR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 065d3fb4-1a17-4454-b16c-733b2bb2008e
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: TCURR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e32a1097-c704-421f-b640-3a611b64d5d9
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: GDATU
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 48d8b5b8-0dea-4f02-ae37-082c1b5b918f
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: UKURS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 434ca7e4-6898-4624-986d-3aa49348cc8a
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FFACT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 89c20943-6599-4738-b422-2544985caff5
+              stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: TFACT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'SV_DM_FDM_D_SHS_S_FDM00_R_TCURR') }}
+      name: SV_DM_FDM_D_SHS_S_FDM00_R_TCURR
+      schema: ""
+      sqlType: Source
+      table: SV_DM_FDM_D_SHS_S_FDM00_R_TCURR
+      type: sourceInput
+    stepCounter: 8b75afc9-2223-42cc-81f7-38a07dbe630f

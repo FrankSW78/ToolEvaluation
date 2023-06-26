@@ -1,0 +1,154 @@
+steps:
+  SV_DM_FDM_D_SHS_S_FDM00_R_TCURF-06178b24-4bab-4349-85a2-00bb203c47f5:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SAMPLE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c9f43051-f5dd-4946-ba25-f26701642a22
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: MANDT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f3bfc6f2-62b3-4d0f-96c2-479fd8d95a9e
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: KURST
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 007533b4-8cd2-4d7a-ab1b-53baaa49c4e3
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FCURR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 833b9f2c-2d9f-4c75-bf42-386745e2102e
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: TCURR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 920a9932-013c-46ad-b981-2fc5c8d18191
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: GDATU
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7650aff7-4ea1-4e6e-b3a1-1ff50cd29aec
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FFACT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 74804a55-47ab-491d-bac7-fcb5cd3a38bf
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: TFACT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e2b510e4-3f85-4f72-a067-4637432542ec
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: ABWCT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b99d83a9-e49c-4892-b63a-e94a367efce8
+              stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: ABWGA
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'SV_DM_FDM_D_SHS_S_FDM00_R_TCURF') }}
+      name: SV_DM_FDM_D_SHS_S_FDM00_R_TCURF
+      schema: ""
+      sqlType: Source
+      table: SV_DM_FDM_D_SHS_S_FDM00_R_TCURF
+      type: sourceInput
+    stepCounter: 06178b24-4bab-4349-85a2-00bb203c47f5
