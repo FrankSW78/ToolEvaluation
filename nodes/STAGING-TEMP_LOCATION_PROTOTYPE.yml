@@ -429,6 +429,21 @@ steps:
             nullable: true
             primaryKey: false
             uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b3534424-2e85-4f2a-bd2b-745a4b778174
+              stepCounter: 05d7e7ac-fe5d-4cac-b391-da70fc2b7718
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: NEWCOLUMN
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
         join:
           joinCondition: FROM {{ ref('STAGING', 'TEMP_LOCATION_PROTOTYPE') }}
       name: TEMP_LOCATION_PROTOTYPE

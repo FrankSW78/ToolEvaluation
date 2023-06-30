@@ -1,0 +1,159 @@
+steps:
+  HUB_TEMP_HUMANENTITY_PROTOTYPE-6f406a1b-4768-417b-86a8-9a811aea5cdf:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: RDV
+      materializationType: table
+      metadata:
+        appliedNodeTests:
+          - continueOnFailure: false
+            description: ""
+            name: Test
+            runOrder: Before
+            templateString: SELECT * FROM {{ ref_no_link('RDV','HUB_TEMP_HUMANENTITY_PROTOTYPE')}} WHERE FISCALYEAR_MAX < 0
+        columns:
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 37a41c8b-5ebb-4e58-9015-247df3d33edc
+              stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            dataType: VARCHAR(25)
+            description: ""
+            name: ARE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5f433c0e-be05-4777-b021-75d2c1f60904
+                    stepCounter: d7b4102f-1229-416f-808d-b3abb302b0c6
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: ada03cd2-1bbf-4086-81b9-70d8be088e5a
+              stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            dataType: VARCHAR(100)
+            description: ""
+            name: COSTCENTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fbd4ec96-e6b2-4589-92da-0565d806e3f4
+                    stepCounter: d7b4102f-1229-416f-808d-b3abb302b0c6
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: c7b8c9b2-330e-4d4f-9e9d-9fdb0d25caf6
+              stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            dataType: VARCHAR(50)
+            description: ""
+            name: LOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ab29dca5-db68-4537-b4d7-310855e5c099
+                    stepCounter: d7b4102f-1229-416f-808d-b3abb302b0c6
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: ec2054d0-50cf-42f7-a0b5-889ae4287c4d
+              stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ffd13e44-18c3-4d9f-86de-dcbf09d7e098
+                    stepCounter: d7b4102f-1229-416f-808d-b3abb302b0c6
+                transform: ""
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: a320f6f0-18a1-406c-a890-a557884e9ae5
+              stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 489797d6-0176-4880-a1f6-73d824316f9f
+                    stepCounter: d7b4102f-1229-416f-808d-b3abb302b0c6
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 1e942e7e-72a1-4021-8be1-aaccdc7c5d11
+              stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            dataType: NUMBER(38,0)
+            description: ""
+            name: FISCALYEAR_MAX
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2033145a-c724-4a8f-acf3-488658b6e0a7
+                    stepCounter: d7b4102f-1229-416f-808d-b3abb302b0c6
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 53b51427-e762-465d-86dd-9d3142af3fc5
+              stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            config:
+              is_Hub_hk: true
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 37a41c8b-5ebb-4e58-9015-247df3d33edc
+                stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+              - columnCounter: ada03cd2-1bbf-4086-81b9-70d8be088e5a
+                stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+              - columnCounter: c7b8c9b2-330e-4d4f-9e9d-9fdb0d25caf6
+                stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf
+            name: HK_HUMANENTITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGING
+                nodeName: DVSTG_TEMP_HUMANENTITY_PROTOTYPE
+            join:
+              joinCondition: FROM {{ ref('STAGING', 'DVSTG_TEMP_HUMANENTITY_PROTOTYPE') }} "DVSTG_TEMP_HUMANENTITY_PROTOTYPE"
+            name: HUB_TEMP_HUMANENTITY_PROTOTYPE
+            noLinkRefs: []
+      name: HUB_TEMP_HUMANENTITY_PROTOTYPE
+      overrideSQL: false
+      schema: ""
+      sqlType: SCALEFREE-DATAVAULT4COALESCE::6
+      type: sql
+    stepCounter: 6f406a1b-4768-417b-86a8-9a811aea5cdf

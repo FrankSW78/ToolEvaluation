@@ -1,0 +1,124 @@
+steps:
+  TEMP_DEPTHSTRUCTURECOSTCENTER_MAPPING_PROTOTYPE-ebcb376b-4c8f-4e81-a689-b97ec4d72dc3:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: STAGING
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 46ffb79c-d68e-4fd3-a774-d002aed63cb7
+              stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: KOSTL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a36faebb-50cb-4631-8b65-b25811355f21
+              stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3
+            config: {}
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: ""
+            name: VALIDFROM
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 45919962-93fd-44a8-9631-2cccb60fead3
+              stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3
+            config: {}
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: ""
+            name: VALIDTO
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bf0b3abc-12d7-47a2-ae0d-6ea032ff547e
+              stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: PRCTR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: af7ce7bc-ec8e-49b4-abb4-cba9a8470f51
+              stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: YHPRCTR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6f856288-1300-4fbf-b2b3-af4749a5e197
+              stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3
+            config: {}
+            dataType: VARCHAR(12)
+            defaultValue: ""
+            description: ""
+            name: YHMRSNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2d6abe19-7563-49d8-a11c-da3d91d527e0
+              stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3
+            config: {}
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: SOURCESYSTEM
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('STAGING', 'TEMP_DEPTHSTRUCTURECOSTCENTER_MAPPING_PROTOTYPE') }}
+      name: TEMP_DEPTHSTRUCTURECOSTCENTER_MAPPING_PROTOTYPE
+      schema: ""
+      sqlType: Source
+      table: TEMP_DEPTHSTRUCTURECOSTCENTER_MAPPING_PROTOTYPE
+      type: sourceInput
+    stepCounter: ebcb376b-4c8f-4e81-a689-b97ec4d72dc3

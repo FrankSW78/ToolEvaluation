@@ -483,6 +483,27 @@ steps:
                     THEN TRUE 
                     ELSE FALSE 
                   END
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 828b17d3-7d19-4a96-8f4d-5acbeaf1de6b
+              stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: NEWCOLUMN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ee6e26c1-b566-4cfc-9920-3e9228979d79
+                    stepCounter: 890efe81-913a-4b5b-9cef-fabaa8a79c1d
+                transform: ""
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

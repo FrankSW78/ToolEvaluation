@@ -1,0 +1,106 @@
+steps:
+  HUB_TEMP_LEGALENTITY_PROTOTYPE-34e75a87-af95-4ad9-80bf-c26ee24ca35a:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: RDV
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: a148c2f9-7a0a-460b-a1ab-e53287524049
+              stepCounter: 34e75a87-af95-4ad9-80bf-c26ee24ca35a
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ARE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3d031a9e-72c0-4835-822c-c9d8bd17e655
+                    stepCounter: 89d3a55f-c938-43a4-80ae-68dcc2b4750a
+                transform: ""
+          - columnReference:
+              columnCounter: f6b53f20-b308-4817-8dfd-6138f074399a
+              stepCounter: 34e75a87-af95-4ad9-80bf-c26ee24ca35a
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9cc05811-1561-43c9-bc48-461ff5a36a65
+                    stepCounter: 89d3a55f-c938-43a4-80ae-68dcc2b4750a
+                transform: ""
+          - columnReference:
+              columnCounter: 0273ff5e-ac4f-42eb-8800-74d6fe39f342
+              stepCounter: 34e75a87-af95-4ad9-80bf-c26ee24ca35a
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4b224880-5d26-4e15-83ff-a6ea2ad77560
+                    stepCounter: 89d3a55f-c938-43a4-80ae-68dcc2b4750a
+                transform: ""
+          - columnReference:
+              columnCounter: 5a1d9683-5a3c-48eb-9a61-227faedaefb3
+              stepCounter: 34e75a87-af95-4ad9-80bf-c26ee24ca35a
+            config:
+              is_Hub_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_LEGALENTITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9d703ac7-dfe0-47a3-9480-06566d2c7de3
+                    stepCounter: 89d3a55f-c938-43a4-80ae-68dcc2b4750a
+                transform: ""
+          - columnReference:
+              columnCounter: 2c76bf37-50bb-496f-bc1b-4bd58e2b3e68
+              stepCounter: 34e75a87-af95-4ad9-80bf-c26ee24ca35a
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_LEGALENTITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e0636d8d-54a0-4940-8fd7-526ef306f8c5
+                    stepCounter: 89d3a55f-c938-43a4-80ae-68dcc2b4750a
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGING
+                nodeName: DVSTG_TEMP_LEGALENTITY_PROTOTYPE
+            join:
+              joinCondition: FROM {{ ref('STAGING', 'DVSTG_TEMP_LEGALENTITY_PROTOTYPE') }} "DVSTG_TEMP_LEGALENTITY_PROTOTYPE"
+            name: HUB_TEMP_LEGALENTITY_PROTOTYPE
+            noLinkRefs: []
+      name: HUB_TEMP_LEGALENTITY_PROTOTYPE
+      overrideSQL: false
+      schema: ""
+      sqlType: SCALEFREE-DATAVAULT4COALESCE::6
+      type: sql
+    stepCounter: 34e75a87-af95-4ad9-80bf-c26ee24ca35a

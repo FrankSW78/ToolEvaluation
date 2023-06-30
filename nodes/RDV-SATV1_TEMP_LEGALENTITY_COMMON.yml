@@ -1,0 +1,195 @@
+steps:
+  SATV1_TEMP_LEGALENTITY_COMMON-cbad3387-4f33-450d-bda3-68ca51f0b013:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: RDV
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 0fdd91b9-31f9-4a02-8a15-d7c036b8c8c5
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: REGISTEREDOFFICE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7bdfdf22-4f15-4aa7-b55d-3a9fe1981e32
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - columnReference:
+              columnCounter: 12ba9f94-3184-4eaf-bb54-9dd9cb7b7f8f
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHARACTEROFCOMPANYCODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 95b69c12-719f-4c19-b977-d30fa8d18e8c
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - columnReference:
+              columnCounter: 3807dc4e-eed3-43ad-b799-a71f2ab42616
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHARACTEROFCOMPANY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e5de52ea-257f-4d92-b72e-45eb755b55db
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - columnReference:
+              columnCounter: e80796a5-c82f-49e8-92da-d400402b0315
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNTABILITYFORBOOKSANDRECORDS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 60300043-7193-4ab2-a0d1-48b45bab6f86
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - columnReference:
+              columnCounter: 5ecd4638-19a4-4c45-8be9-253474986fa6
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 30421415-9fc8-4a90-8cd4-49ecf2edf11c
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - columnReference:
+              columnCounter: 3279b3c0-62fa-4b68-a30b-aed0729e42d9
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 464e6f8a-372b-4e4a-98f1-126a246b0986
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - columnReference:
+              columnCounter: d7712163-0a9a-4a20-9aec-5280ddffbddf
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            config:
+              is_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_LEGALENTITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ed3588fd-8739-4a36-9ab2-3be995770538
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - columnReference:
+              columnCounter: 2aa75a4d-07c3-4a6d-b202-a6366d6934c8
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_LEGALENTITY_DETAILED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0a1af3f0-b250-4c39-8985-f5bf9e901805
+                    stepCounter: d1ee7f14-79c6-4e18-a353-c2daab6f029a
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9a6674c7-eeff-4bc4-a97a-6daca3cd4e0a
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            is_system_ledts: true
+            name: LEDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: |-
+                  COALESCE(LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+                  OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}" 
+                  ORDER BY "{{ datavault4coalesce.config.ldts_alias }}"), {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.end_of_all_times) }})
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5b716bf9-2dc3-453a-a654-528dc7c95b72
+              stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            is_system_current_col: true
+            name: IS_CURRENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: |-
+                  CASE 
+                    WHEN 
+                      LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+                      OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}" 
+                      ORDER BY "{{ datavault4coalesce.config.ldts_alias }}") IS NULL 
+                    THEN TRUE 
+                    ELSE FALSE 
+                  END
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: RDV
+                nodeName: SATV0_TEMP_LEGALENTITY_COMMON
+            join:
+              joinCondition: FROM {{ ref('RDV', 'SATV0_TEMP_LEGALENTITY_COMMON') }} "SATV0_TEMP_LEGALENTITY_COMMON"
+            name: SATV1_TEMP_LEGALENTITY_COMMON
+            noLinkRefs: []
+      name: SATV1_TEMP_LEGALENTITY_COMMON
+      overrideSQL: false
+      schema: ""
+      sqlType: SCALEFREE-DATAVAULT4COALESCE::9
+      type: sql
+    stepCounter: cbad3387-4f33-450d-bda3-68ca51f0b013

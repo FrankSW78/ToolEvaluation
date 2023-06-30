@@ -1,0 +1,169 @@
+steps:
+  TEMP_FINANCIALORGANIZATIONDEPTHSTRUCTURE_PROTOTYPE-8c2d304e-92fe-4b27-aa66-31deebef95ba:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: STAGING
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 81d19eeb-27db-4b7c-9e14-5243ea40463a
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: DIVISION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8d7892e2-d2d8-4a15-94e4-f83e48855c13
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: BUSINESSUNIT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 447b21c1-df5f-4974-8f70-575e53f1f119
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: BUSINESSSEGMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 57ad81d1-073c-4af3-9da7-559560496119
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: BUSINESSSUBSEGMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c8542b26-9d2c-49d6-85e2-8a4cd952de72
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: SHORTTEXT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 105844d8-3313-4163-9b8e-b31b490e6671
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: LONGTEXT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 70fe183b-9183-4e16-b039-109e5a4dac91
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: CLASSIFICATION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c028f400-a91b-40d1-ab56-28b18bf083de
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: SERVICEELEMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2b6955f7-bf27-475b-b630-1ce6e009d7f0
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: DIVISION_2
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c9013ab5-0f44-49a2-93b1-84c85f874955
+              stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: TIGL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('STAGING', 'TEMP_FINANCIALORGANIZATIONDEPTHSTRUCTURE_PROTOTYPE') }}
+      name: TEMP_FINANCIALORGANIZATIONDEPTHSTRUCTURE_PROTOTYPE
+      schema: ""
+      sqlType: Source
+      table: TEMP_FINANCIALORGANIZATIONDEPTHSTRUCTURE_PROTOTYPE
+      type: sourceInput
+    stepCounter: 8c2d304e-92fe-4b27-aa66-31deebef95ba

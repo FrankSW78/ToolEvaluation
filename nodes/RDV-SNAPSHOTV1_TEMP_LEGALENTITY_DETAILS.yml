@@ -1,0 +1,298 @@
+steps:
+  SNAPSHOTV1_TEMP_LEGALENTITY_DETAILS-cc290b68-9908-400b-9172-bd8cac14eb60:
+    operation:
+      config:
+        daily_snapshot_duration: "30"
+        daily_snapshot_unit: DAY
+        daily_snapshots_forever: false
+        monthly_snapshot_duration: "3"
+        monthly_snapshot_unit: YEAR
+        monthly_snapshots_forever: false
+        postSQL: ""
+        preSQL: ""
+        quarterly_snapshot_duration: "5"
+        quarterly_snapshot_unit: YEAR
+        quarterly_snapshots_forever: false
+        use_logarithmic_logic: true
+        weekly_snapshot_duration: "1"
+        weekly_snapshot_unit: YEAR
+        weekly_snapshots_forever: false
+        yearly_snapshot_duration: "10"
+        yearly_snapshot_unit: YEAR
+        yearly_snapshots_forever: false
+      database: ""
+      deployEnabled: false
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: RDV
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: b7eefaa2-d39e-4208-9ecb-6f1dde04eab8
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e54fcae2-50f4-4b46-b52b-b745db804ccc
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: 5e833b8b-52e7-407c-84b5-df1590fc0408
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FORCE_ACTIVE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a7108cbe-79b3-443b-9e3a-f8642d30413f
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: e3813564-6794-447c-8781-87f0d012e354
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: REPLACEMENT_SDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ba55269a-c9f4-4958-890c-88295b972445
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: b45dc67e-9ff6-4f18-9a31-0b7775e9eadf
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CAPTION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: aace8185-e97a-4bc6-acc1-941049a148bb
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: 04482c15-bba6-402d-9d71-ae4e45f69607
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_HOURLY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 17abb1d5-7385-4453-8034-2a7d4f76d213
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: 8557463b-fa88-4fa3-a6b7-9450fc04e49c
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_DAILY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dd8e194e-a1df-4eb9-aa78-a8d8aa6d05f0
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: ddccaba4-4a00-4d7d-8155-7de628184afc
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_BEGINNING_OF_WEEK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 19a01a8d-a4f9-4b68-9013-7060fbaf5c1e
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: a855a449-7356-4b36-96e0-de4e8063bf04
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_BEGINNING_OF_MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d29ad3ac-54b6-4e9a-a233-df11c1b6e4a0
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: 6a051d72-bd0c-4964-89ad-30288c34c50b
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_BEGINNING_OF_QUARTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3a438394-c59d-4418-8f26-54b031629d4b
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - columnReference:
+              columnCounter: 3cae005e-1c75-4ffd-9cd6-90e61d6f59a7
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_BEGINNING_OF_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9fa4fb99-9573-4af0-b862-4eedee441e43
+                    stepCounter: d24a9b57-f987-42f1-8c33-f02f1eccde96
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a6da5a10-092e-472c-aa96-7a7fbff034fd
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            name: IS_ACTIVE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            system_is_active: true
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2083ed10-5c18-4577-aabd-def1e503a784
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            name: IS_LATEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            system_is_latest: true
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2c7e0338-8d2a-4052-a20e-1f6644f54e40
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            name: IS_CURRENT_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            system_is_current_year: true
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 57457aa8-2739-4296-968e-b1888323ecdc
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            name: IS_LAST_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            system_is_last_year: true
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 083296c8-6eb7-45c3-8999-bf93ca7896f5
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            name: IS_ROLLING_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            system_is_rolling_year: true
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0bbc666c-3699-48af-b4b3-1bab5792cd64
+              stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            name: IS_LAST_ROLLING_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            system_is_last_rolling_year: true
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: RDV
+                nodeName: SNAPSHOTV0_TEMP_LEGALENTITY_DETAILS
+            join:
+              joinCondition: FROM {{ ref('RDV', 'SNAPSHOTV0_TEMP_LEGALENTITY_DETAILS') }} "SNAPSHOTV0_TEMP_LEGALENTITY_DETAILS"
+            name: SNAPSHOTV1_TEMP_LEGALENTITY_DETAILS
+            noLinkRefs: []
+      name: SNAPSHOTV1_TEMP_LEGALENTITY_DETAILS
+      overrideSQL: false
+      schema: ""
+      sqlType: SCALEFREE-DATAVAULT4COALESCE::14
+      type: sql
+    stepCounter: cc290b68-9908-400b-9172-bd8cac14eb60

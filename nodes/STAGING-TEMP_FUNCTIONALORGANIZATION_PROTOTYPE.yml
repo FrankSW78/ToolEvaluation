@@ -1,0 +1,199 @@
+steps:
+  TEMP_FUNCTIONALORGANIZATION_PROTOTYPE-e7ef8c76-4388-48f9-88ce-22d51ccf2372:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: STAGING
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ccfd647b-08c8-408b-9061-8c1f004ec868
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: ORGKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e58b55ef-57e8-42d0-a15c-7f2ddac59cb6
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ORGCODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 494d18f0-4c9b-4e3b-95de-4d39ce3744a8
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: SUPERIORORGCODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5bd24b88-2d76-4c8e-aeb0-99ca6252e058
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: ORGNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 83147ad3-eb9c-4fd4-84c1-cd41daeda176
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ORGUNIT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9f004dfe-63df-4bcc-add1-2c19c588129c
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ORGTYPE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: de5299c5-f9b7-4f8e-850d-e0d627670f4e
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: LOCATION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 072dec1a-150f-418a-a478-182ff5e8ad7d
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ORGCLASS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b2d0984f-350f-4e45-8968-de7a685594de
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ORGLEVEL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cb5ae39c-9b40-4956-a6c3-38211bb31d58
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: VALIDFROM
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 880cd79c-2f1d-40fc-beed-6951bc2073eb
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: VALIDTO
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6298c880-f1c8-4fc5-b1fc-c36761e6a2bc
+              stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372
+            config: {}
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: BUSINESSFUNCTIONAREA
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('STAGING', 'TEMP_FUNCTIONALORGANIZATION_PROTOTYPE') }}
+      name: TEMP_FUNCTIONALORGANIZATION_PROTOTYPE
+      schema: ""
+      sqlType: Source
+      table: TEMP_FUNCTIONALORGANIZATION_PROTOTYPE
+      type: sourceInput
+    stepCounter: e7ef8c76-4388-48f9-88ce-22d51ccf2372

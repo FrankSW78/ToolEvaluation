@@ -959,6 +959,124 @@ packages:
       commit: 016ad442cb5d5a182dd42e3e7d77c9a2ee968a73
 projects: {}
 stepTypes:
+  StepType-1:
+    id: "1"
+    isDisabled: true
+    metadata:
+      defaultStorageLocation: null
+      error: null
+      nodeMetadataSpec: |-
+        capitalized: 'Copy of DATAVAULT BY SCALEFREE: HUB'
+        short: 'HUB'
+        tagColor: blue
+        plural: 'DATAVAULT BY SCALEFREE: HUBS'
+
+        config:
+        - groupName: MyOptions
+          items:
+          - type: materializationSelector
+            isRequired: true
+            enableIf: 'true'
+            options: 
+            - table
+            - view
+            default: table
+         
+          - displayName: Pre-SQL
+            attributeName: preSQL
+            type: textBox
+            isRequired: false
+
+          - displayName: Post-SQL
+            attributeName: postSQL
+            type: textBox
+            isRequired: false
+
+          - type: multisourceToggle
+
+        - groupName: Data Vault
+          items:
+
+          - displayName: Hub Hashkey Column
+            type: columnSelector
+            attributeName: is_Hub_hk
+            isRequired: true
+
+          - displayName: Hub LoadDateTimestamp Column
+            enableIf: 'false'
+            type: columnSelector
+            attributeName: is_Hub_ldts
+            isRequired: false
+      templates:
+        create:
+          templateString: |
+            {{ stage('Create Hub Table') }}
+
+            CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
+            (
+            	{% for col in columns %}
+            		"{{ col.name }}" {{ col.dataType }}
+            		{%- if not col.nullable %} NOT NULL
+            			{%- if col.defaultValue | length > 0 %} DEFAULT {{ col.defaultValue }}{% endif %}
+            		{% endif %}
+            		{%- if col.description | length > 0 %} COMMENT '{{ col.description }}'{% endif %}
+            		{%- if not loop.last -%}, {% endif %}
+            	{% endfor %}
+            )
+            {%- if node.description | length > 0 %} COMMENT = '{{ node.description }}'{% endif %}
+        run:
+          templateString: |-
+            {% if config.preSQL %}
+            	{{ stage('Pre-SQL') }}
+            	{{ config.preSQL }}
+            {% endif %}
+
+            {% for source in sources %}
+
+            	{{ stage('INSERT INTO Hub - ' ~ source.name) }}
+
+            	{%- set hashkey_column = get_value_by_column_attribute("is_Hub_hk") -%}
+
+            	INSERT INTO {{ ref_no_link(node.location.name, node.name) }}
+            	
+            WITH incoming AS (
+
+            	SELECT DISTINCT
+            	{% for col in source.columns %}
+            		{{ get_source_transform(col) }} AS "{{ col.name }}"
+            		{%- if not loop.last -%}, {% endif %}
+            	{% endfor %}
+
+            	{{ source.join }}
+
+            ), 
+
+            new_records AS (
+
+            	SELECT 
+            	"SRC".* 
+            	FROM incoming "SRC"
+            	WHERE NOT EXISTS 
+
+            	(SELECT 1 
+            	FROM {{ ref_no_link(node.location.name, node.name) }} "TGT"
+            	WHERE 
+            		"SRC"."{{ hashkey_column }}" = "TGT"."{{ hashkey_column }}")
+
+            	QUALIFY ROW_NUMBER() OVER (PARTITION BY "{{ hashkey_column }}" ORDER BY "{{ datavault4coalesce.config.ldts_alias }}" ) = 1
+            )
+
+
+            	SELECT * FROM new_records
+
+            {% endfor %}
+
+            {% if config.postSQL %}
+            	{{ stage('Post-SQL') }}
+            	{{ config.postSQL }}
+            {% endif %}
+    name: "Another Test: Hub"
+    version: 1
   StepType-Dimension:
     id: Dimension
     isDisabled: false
