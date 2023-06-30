@@ -47,7 +47,7 @@ steps:
               - columnReferences:
                   - columnCounter: 98ba039b-345b-418c-bbfb-5eae82043cbf
                     stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
-                transform: ""
+                transform: LOWER("STG_TEMP_LOCATION_PROTOTYPE"."COUNTRYSHORT")
           - columnReference:
               columnCounter: b062d936-1d7e-4b53-923e-626b8eb32db5
               stepCounter: 0758312e-751f-4d26-8f87-cae0bc17bd34
@@ -571,24 +571,6 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 9f8560a2-2d72-48d4-b679-f503904a1ed1
-              stepCounter: 0758312e-751f-4d26-8f87-cae0bc17bd34
-            config: {}
-            dataType: TIMESTAMP
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSystemCreateDate: true
-            name: SYSTEM_CREATE_DATE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
           - acceptedValues:
               strictMatch: true
               values: []
