@@ -1,4 +1,4 @@
-pool: default
+pool: Default
 
 variables:
  - name: coalesceCliVersion
