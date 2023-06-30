@@ -1,0 +1,499 @@
+steps:
+  STG_TEMP_LOCATION_PROTOTYPE-4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: RDV
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 98ba039b-345b-418c-bbfb-5eae82043cbf
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUNTRYSHORT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f95af449-8adc-4932-bdff-fdba1405c821
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: e0e087ad-b03f-48b1-905d-6afafb35d12b
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ARECONSOLIDATEDAT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dca02724-c0ee-4aa4-b1e6-1725a76d5b60
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 6c194cb3-f503-41f0-893a-1a77f8c8116d
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ARECOMBINEDSEARCHFIELD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b53524cc-5a05-4610-b830-b54cca220414
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: da8d0de2-ddcf-4d1d-9055-b1048b79d969
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2f1b44f7-5588-4022-b1b7-20712aac6ee2
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 5884fa1a-0d1c-4099-bdb9-29850d53cc2c
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COMPANY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 23252a5f-3c23-444f-8b9c-dbe5b27fa55a
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 7556b5a9-0a68-4b7c-9cc1-4a9a81b49630
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COMPANYSHARE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 394d163f-07cb-46c2-afa3-6a4641395f48
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: e6746799-7489-4b23-b2d7-af4d5300c8bd
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HEADQUARTERLOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3f2133a7-a002-40ed-9b58-2782abff796a
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 54111cf5-0df0-4bbd-9785-a1632825439d
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESSADDITION1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6132e4cb-66d0-4057-ba54-94442a0a2732
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 67a870d2-c28a-4118-aa97-e56a4b4140fc
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESSADDITION2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 03d1006c-d360-43a9-9a59-2f31fae5d752
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: dc62e770-b3d2-4cec-97c6-58cd1abba9bf
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESSADDITION3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 880dc44e-62d6-4558-a981-1bc8cdc2dcbb
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: f0f7fd20-d6b4-4956-8b8f-9146b2316efa
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STREET
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 68dac0ae-0362-481f-bd0d-3b3f77bdd877
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: eac8ee48-9045-43d2-9874-fbda5ffd400c
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HOUSENUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cf0d5ce2-b09c-45a1-9796-178387c5beca
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 3e80049e-f3fc-447b-b7f8-774424b800b0
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POSTALCODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d60aa278-2570-4743-baa1-dfbf8d944998
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: d28756da-40fb-4fcc-a861-70f348afc318
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITYDE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f85608ab-36ec-4268-8116-dc6e0685f98a
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: dd11bca9-7e8e-4987-ae81-0f174112070c
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITYEN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ac1c433a-3d43-48f4-bfc6-ae4899be96cd
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 3e3adc67-374f-4672-a485-8e40ef6be352
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8463762b-059d-4841-a59d-d934d019637f
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 71979c1e-e176-47fa-a0a4-8a6e55509aac
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUNTRYINT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8900d4d9-c26a-4a61-9d6e-c9eeece1ac85
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 57f5435d-e9d7-4ca3-9196-805a039fd0f7
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUNTRYISO3166
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0f9233fa-1cd1-4b07-a06d-4070f470825d
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 39237113-bfda-48e7-824e-4731944c977d
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CONTINENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3f8d1ae7-bbf9-4355-a4d1-9b0c9e155a28
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 6c203e43-e488-4179-9f7d-e6153687525a
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CONTINENTEN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b0c189a0-bcfd-456e-8695-147ba9fb3497
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 902dd3da-6500-466f-8c18-bce94e4b4074
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURRENCY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 76c87c57-1d35-4ce7-bbfe-70bc2f72258a
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 4163ca39-56c6-40e9-b722-b19bd5e7f98b
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURRENCYISO4177
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 299e98b6-cad0-47b1-9af4-9528a71cf632
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: ccde0794-c58b-456c-bd1c-2108f8921c3e
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(128)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PROVINCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e22300c8-c6a0-4563-b763-d9d1337ad071
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: aa9b7e9e-8532-4225-a1ec-3ef7505da5c3
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PROVINCEEN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 89d30ec5-efd8-40be-9f75-1a46f0546702
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: adde0ca2-dbeb-4875-9344-ceaa36e7c7dc
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(26)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLUSTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 785c2388-b7c2-4957-bc10-a98ba1a790df
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 9eada29e-89e7-4e2d-b788-d6ec43a6da62
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DL_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 20236cc9-fbb1-410a-a459-6bda519304e7
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 1e30aac1-105d-45d6-a65e-ea8e3cb05c0b
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: TIMESTAMP
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            hashDetails: null
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2461adb0-8f13-4d69-8ca4-05284cfaa6b2
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 1255a5c4-9cc1-451f-86cd-3d4beb944de9
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: STRING
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            hashDetails: null
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 75049b9f-c322-41fb-b6ec-c7f75b36a721
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 726b9476-8b64-41cf-891e-a72c1825a753
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_LOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e2e2b775-01f0-4818-86f6-003216eb5495
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 624700be-44f4-44bd-bb2f-6999cfe52098
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HD_LOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9e7d6c05-6467-4ffb-8fe0-e6b2dd57c9b4
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 2e5686af-c003-43d8-9b12-ac462747eaca
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9aac4b5b-80d8-41a1-8cb5-6f3702a6509f
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: 5e5364a0-2a3a-4e31-9556-12daba0e5e2c
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_CURRENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b6cd95ba-df33-446e-b6af-cf01f0f753c7
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+          - columnReference:
+              columnCounter: b71f7e38-c5f0-4742-a00c-1ea48b47290e
+              stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NEWCOLUMN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 828b17d3-7d19-4a96-8f4d-5acbeaf1de6b
+                    stepCounter: cd060eeb-b936-4490-9bda-5350ed54e0b8
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: RDV
+                nodeName: SATV1_TEMP_LOCATION_PROTOTYPE
+            join:
+              joinCondition: FROM {{ ref('RDV', 'SATV1_TEMP_LOCATION_PROTOTYPE') }} "SATV1_TEMP_LOCATION_PROTOTYPE"
+            name: STG_TEMP_LOCATION_PROTOTYPE
+            noLinkRefs: []
+      name: STG_TEMP_LOCATION_PROTOTYPE
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 4a98ce19-a6c4-49fa-bd04-77f0ee2da7ca
